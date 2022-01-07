@@ -6,7 +6,7 @@ const {v4:uuid} = require('uuid');
 
 const logEvents = async (msg)=>{
     const dateTime = `${format(new Date(),'yyyy-MM-dd\tHH:mm:ss')}`;
-    const logItem = `${dateTime}\t${uuid()}\t${msg}`;
+    const logItem = `${dateTime}\t${uuid()}\t${msg}\n`;
     console.log(logItem);
 
     try {
